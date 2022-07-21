@@ -1,0 +1,10 @@
+.product-search {
+    margin: auto;
+    border: 1px solid #111;
+    width: 1028px;
+    background-color: var(--bck-header);
+}
+.product-search ::placeholder {
+    color: #a4a4ca;
+    padding-left: 7px;
+}

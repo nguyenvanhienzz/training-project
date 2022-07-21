@@ -1,0 +1,95 @@
+.page-right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px -50px;
+    width: 100%;
+    & .react-paginate {
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: #1da9df;
+        float: left;
+        transition: background-color 0.3s;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0;
+        & .active {
+            color: #fff;
+        }
+
+        & .active-ol {
+            background-color: #1da9df;
+        }
+
+        & .page-link {
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin: 0 3px;
+        }
+
+        & .a-link {
+            display: flex;
+            margin: 0 8px;
+        }
+
+        & .page-link:hover {
+            background-color: #ddd;
+        }
+
+        & .active-ol:hover {
+            background-color: #1da9df;
+        }
+    }
+
+    & .previous .page-link {
+        padding: 0px !important;
+        margin-right: 8px;
+    }
+
+    & .next .page-link {
+        padding: 0px !important;
+        margin-right: 8px;
+    }
+
+    & .previous-disabled,
+    .next-disabled {
+        color: rgb(180, 179, 179);
+    }
+
+    & .break-link {
+        border-radius: 5px;
+        padding: 5px 12px;
+    }
+
+    & .break-link:hover {
+        background-color: #ddd;
+    }
+}
+
+.icon-arrow {
+    border-radius: 5px;
+    padding: 0 5px;
+    transform: scale(1.5);
+}
+
+.icon-arrow:hover {
+    background-color: #ddd;
+}
+.select {
+    background-color: var(--button);
+    color: #fff;
+    padding: 4px 10px;
+    margin-right: 10px;
+}
+.info-product {
+    margin-left: 50px;
+}
+select {
+    background-color: var(--button);
+    color: #fff;
+    padding: 4px 10px;
+    margin-right: 10px;
+}

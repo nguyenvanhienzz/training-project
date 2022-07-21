@@ -1,0 +1,162 @@
+.seperated-space {
+    display: block;
+    height: 20px;
+    background: #323259;
+    margin-right: -2.25rem;
+    margin-left: -2.25rem;
+    box-shadow: inset 0 5px 5px -5px rgb(0 0 0 / 75%);
+}
+
+.price-inven {
+    color: #fff;
+
+    label {
+        font-size: 1.8rem;
+        margin: 30px -10px;
+    }
+}
+.flex-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text {
+        width: 140px;
+        text-align: end;
+    }
+    .input-group-text {
+        width: 40px;
+        height: 35px;
+        border: none;
+        color: #77779a;
+        background-color: #40405f;
+    }
+}
+.right-input {
+    width: 200px;
+    margin-left: 25px;
+}
+.input-price .flex-input {
+    select {
+        border-radius: 5px;
+        height: 35px;
+        border: none;
+        background-color: #323259;
+        width: 200px;
+    }
+}
+.price-inven .input-group {
+    width: 100% !important;
+}
+.input-date > .form-control:read-only {
+    border: none;
+    height: 35px;
+    color: #fff;
+    background-color: #252547;
+}
+.input-date:focus {
+    display: flex !important;
+}
+.input-date > .form-control:focus {
+    color: #fff;
+    background-color: #252547;
+    // width: 100% !important;
+}
+
+.input-price > .form-control {
+    color: #fff;
+    border: none;
+    height: 35px;
+    background-color: #252547 !important;
+}
+.input-price > .form-control:focus {
+    color: #fff;
+    background-color: #252547;
+}
+.icon-box {
+    transform: scale(1.5);
+    width: 10px;
+}
+.right-input .input-instock {
+    width: 150px;
+    background-color: #1b1b38;
+    border: 1px solid #161616;
+}
+.right-input .input-instock:focus {
+    background-color: #1b1b38;
+    border: 1px solid #161616;
+}
+.input-instock {
+    color: #fff !important;
+}
+
+//calenda
+
+.react-calendar {
+    background-color: #323259 !important;
+    color: #fff !important;
+    padding: 5px;
+    border: 1px solid #111 !important;
+}
+.react-calendar button {
+    height: 45px;
+}
+.react-calendar__navigation button {
+    border-radius: 5px;
+    color: rgb(209, 209, 209) !important;
+    font-weight: 600;
+    background-color: #323259 !important ;
+}
+.react-calendar__navigation button:enabled:hover {
+    background-color: #424269 !important ;
+}
+.react-calendar__month-view__weekdays {
+    padding: 5px 0;
+    border-bottom: 1px solid #111;
+    border-top: 1px solid #111;
+    margin-bottom: 5px;
+}
+abbr[title] {
+    font-weight: 600;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 12px;
+    color: #b4b4db !important;
+    text-decoration: none !important;
+}
+.react-calendar__month-view__days__day--weekend {
+    color: #fff !important;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #b4b4db !important;
+}
+.react-calendar__tile {
+    font-weight: bold !important;
+    color: #fff;
+    padding: 0 !important;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: #252549 !important;
+    border-radius: 5px;
+}
+
+.react-calendar__tile--now {
+    border: 1px solid #77779a !important;
+    border-radius: 5px;
+
+    background: #323259 !important ;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background-color: #52527a !important;
+}
+.react-calendar__tile--active {
+    background-color: #a16eff !important;
+    border-radius: 5px;
+    color: white;
+}
+.react-calendar__tile--active:enabled:focus {
+    background-color: #a16eff !important;
+    border-radius: 5px;
+    color: white;
+}

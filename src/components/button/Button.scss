@@ -1,0 +1,59 @@
+.btn-contant,
+.btn-add {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--button);
+    color: #fff;
+    border: none;
+}
+.btn-add {
+    margin: 20px 35px;
+}
+.btn-yes,
+.btn-no {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #b18aff, #a16eff);
+}
+.btn-no {
+    background-image: linear-gradient(90deg, #ff708d, #ff3d71);
+}
+.btn-save {
+    font-size: 17px;
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr:hover .hover-btn {
+    background-color: var(--button);
+    border-radius: 5px;
+}
+.hover-btn {
+    min-width: 50px;
+    color: #fff;
+    border: none;
+    background-color: var(--bck-header);
+    padding: 5px 10px;
+}
+.btn-none {
+    font-size: 17px;
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}

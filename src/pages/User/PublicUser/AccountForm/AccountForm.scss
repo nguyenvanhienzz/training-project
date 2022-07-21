@@ -1,0 +1,57 @@
+.account-form {
+    margin: 40px 0;
+    p {
+        color: #fff !important;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+}
+.account-form .flex-label {
+    display: flex !important;
+    align-content: center;
+    margin-left: 30px;
+    input {
+        width: 300px;
+        background-color: #1e1e3d;
+        border: 1px solid #111;
+        border-radius: 5px;
+        color: #fff;
+    }
+    label.form-label {
+        width: 150px;
+        text-align: end;
+        color: #fff !important;
+    }
+    select {
+        width: 250px;
+        margin-left: 20px;
+        background-color: #1e1e3d;
+        border: 1px solid #111;
+        border-radius: 5px;
+        color: #fff;
+        height: 40px;
+    }
+}
+.account-form .btn-account {
+    margin-left: 40px !important;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 1028px;
+    height: 70px;
+    background-color: #323259;
+    border-width: 0 0 1px 1px;
+    box-shadow: 0 0 13px 0 #b18aff;
+    button {
+        padding: 7px 10px;
+        border-radius: 5px;
+        margin-left: 20px;
+        border: none;
+        min-width: 150px;
+        min-height: 35px;
+        color: #fff;
+        background-color: #f0ad4e;
+        border-color: #eea236;
+    }
+}

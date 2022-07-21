@@ -1,0 +1,123 @@
+.search-bottom-user {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+}
+li {
+    list-style: none;
+}
+.span-li {
+    display: inline-block;
+    margin-left: 15px;
+}
+.flex-input .MuiInputBase-root.MuiInput-root {
+    margin-left: 0px;
+}
+.search-block .flex-input label {
+    width: 100px;
+}
+
+.MuiBox-root-1 {
+    background-color: var(--background-primary);
+    border-radius: 5px;
+}
+.MuiInputBase-root.MuiInput-root {
+    background-color: var(--background-primary);
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.MuiSelect-select.MuiSelect-select {
+    width: 420px !important;
+}
+
+.MuiSelect-icon {
+    color: #fff !important;
+}
+.MuiMenu-list {
+    background: #323259;
+    border-radius: 4px;
+    border: 1px solid #111;
+}
+
+.MuiPopover-paper {
+    height: 300px !important;
+    color: #fff !important;
+}
+.MuiPopover-paper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #13132b;
+}
+
+.MuiPopover-paper::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 200px;
+    position: fixed;
+    height: 10px;
+    background-color: #13132b;
+}
+.MuiPopover-paper::-webkit-scrollbar-thumb {
+    margin-top: 200px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--color);
+}
+// label.MuiInputLabel-root.MuiInputLabel-animated.MuiFormLabel-root.MuiFormLabel-colorPrimary.css-9npbnl-MuiFormLabel-root-MuiInputLabel-root {
+//     margin-left: 10px !important;
+// }
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border: none !important;
+}
+.MuiInput-underline:before {
+    border: none !important;
+}
+.MuiInput-underline:after {
+    border: none !important;
+}
+.MuiInputLabel-shrink {
+    transform: translate(0, 24px) scale(1) !important;
+    transform-origin: top left;
+}
+.MuiPaper-elevation8.MuiPaper-rounded {
+    margin-top: 75px !important;
+}
+
+.MuiListItem-gutters {
+    display: inherit !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.search-bottom-user .MuiFormControl-root {
+    width: 250px !important;
+}
+
+//search-right-user
+.search-right-user {
+    margin-left: 100px;
+}
+.title-register {
+    display: flex;
+    margin-bottom: 20px;
+    .title-pri {
+        margin-right: 50px;
+    }
+    .span-reg {
+        margin-right: 20px;
+    }
+}
+.search-right-user input.form-control {
+    background: #20203f !important;
+    border: 1px solid #111;
+    width: 250px;
+    color: #fff;
+    font-weight: 600;
+}
+.react-calendar__tile--hasActive {
+    background: #76baff;
+    border-radius: 5px;
+}

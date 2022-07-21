@@ -1,0 +1,41 @@
+.name-select {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 300px;
+    text-overflow: clip;
+}
+.sku-select {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 150px;
+    text-overflow: clip;
+}
+.td-category {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 220px;
+    text-overflow: clip;
+}
+.td-arrivalDate {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 300px;
+    text-overflow: clip;
+}
+.td-instock {
+    padding: 0 !important;
+}
+
+.td-vendor {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+.input-group {
+    width: 120px !important;
+    & .input-group-text,
+    .form-control {
+        height: 35px;
+    }
+}

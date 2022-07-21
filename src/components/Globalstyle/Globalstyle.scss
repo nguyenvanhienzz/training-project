@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700');
+
+//đặt biến:
+:root {
+    --background-primary: #1b1b38;
+    --bck-header: #323259;
+    --button: #b18aff;
+    --color: #a683f1;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+input,
+select,
+textarea {
+    outline: none;
+}
+body {
+    overflow: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed; //toi uu toc do hien thi phong
+}
