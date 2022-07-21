@@ -28,7 +28,7 @@ const PublicProduct = () => {
         tax_exempt: 0,
         price: '',
         sale_price_type: '$',
-        arrival_date: (new Date().getTime() / 1000).toString(),
+        arrival_date: '',
         inventory_tracking: 0,
         quantity: '',
         sku: '',

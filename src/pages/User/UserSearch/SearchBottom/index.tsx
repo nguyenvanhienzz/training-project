@@ -38,7 +38,6 @@ const SearchBottom = (props: Props) => {
         },
     };
 
-    console.log(showDate);
     return (
         <div className="search-bottom-user">
             <div className="search-block">

@@ -11,21 +11,26 @@ interface Props {
 }
 const AccountForm = (props: Props) => {
     const { id }: any = useParams();
-
     const navigate = useNavigate();
     const { value, setvalues } = props;
-    console.log(value);
     const onSubmit = async (values: any) => {
-        const user = await userApi.Createuser(values);
-        if (user.errors === false) {
-            navigate('/pages/user/manage-user');
+        if (id) {
+            const updateUser = await userApi.Updateuser({ params: [values] });
+            if (updateUser.errors === false) {
+                navigate('/pages/user/manage-user');
+            }
+        } else {
+            const user = await userApi.Createuser(values);
+            if (user.errors === false) {
+                navigate('/pages/user/manage-user');
+            }
         }
     };
     return (
         <div className="account-form">
             <p>Email & password</p>
             <Formik
-                enableReinitialize={true}
+                enableReinitialize={id ? true : false}
                 initialValues={value}
                 validationSchema={NewAccountSchema}
                 onSubmit={(values) => {
@@ -120,7 +125,9 @@ const AccountForm = (props: Props) => {
 
                         <div className="flex-label">
                             <Label>Type</Label>
-                            {!id ? (
+                            {id ? (
+                                <span style={{ color: '#fff', marginLeft: '20px' }}>{value.paymentRailsType}</span>
+                            ) : (
                                 <select
                                     name="paymentRailsType"
                                     onChange={(e: any) => setvalues({ ...value, paymentRailsType: e.target.value })}
@@ -128,8 +135,6 @@ const AccountForm = (props: Props) => {
                                     <option value="individual">individual</option>
                                     <option value="business">business</option>
                                 </select>
-                            ) : (
-                                <span style={{ color: '#fff', marginLeft: '20px' }}>{value.paymentRailsType}</span>
                             )}
                         </div>
                     </div>

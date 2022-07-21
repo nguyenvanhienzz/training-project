@@ -33,7 +33,7 @@ const ProductInfor = (props: Props) => {
     const config = {
         buttons: ['bold', 'underline', 'italic', 'ul', 'ol', 'source'],
         buttonsXS: ['bold', 'underline', 'italic', 'ul', 'ol', 'source'],
-        autofocus: true,
+        // autofocus: true,
         cursorAfterAutofocus: 'end',
         showXPathInStatusbar: false,
         showCharsCounter: false,

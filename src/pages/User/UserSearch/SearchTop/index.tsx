@@ -1,14 +1,11 @@
 import './SearchTop.scss';
-import { useCallback } from 'react';
-import { useAppDispatch, useAppSelector } from 'redux/hook';
+import { useAppSelector } from 'redux/hook';
 
 import Button from 'components/button';
 import Input from 'components/input';
 
-import { productlist } from 'pages/redux/productSlice';
 import userApi from 'services/auth.service';
 import { UserParams } from 'interface/Params/userParams';
-import { selectCountrys } from 'pages/redux/countrySlice';
 import { selectRoles } from 'pages/redux/roleSlice';
 import { Checkbox, FormControl, ListItemText, MenuItem } from '@mui/material';
 import { ListItem, Select } from '@material-ui/core';

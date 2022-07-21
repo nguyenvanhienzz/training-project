@@ -17,6 +17,7 @@ interface Props {
     setUpdateProduct: (e: any) => void;
 }
 const PricesInventory = (props: Props) => {
+    const { id } = useParams();
     const { updateProduct, setUpdateProduct } = props;
 
     // chi cho nhap so
@@ -39,7 +40,7 @@ const PricesInventory = (props: Props) => {
     }
     const [disDate, setDisDate] = useState(false);
     const handerClick = () => setDisDate(false);
-
+    console.log(updateProduct?.arrival_date);
     return (
         <>
             <div className="seperated-space"></div>
@@ -82,13 +83,16 @@ const PricesInventory = (props: Props) => {
                                     {updateProduct ? (
                                         <Calendar
                                             onChange={(e: any) =>
+                                                // console.log(new Date(e))
                                                 setUpdateProduct({
                                                     ...updateProduct,
                                                     arrival_date: new Date(e * 1000),
                                                 })
                                             }
                                             value={
-                                                updateProduct.arrival_date
+                                                updateProduct.arrival_date && !id
+                                                    ? new Date(updateProduct.arrival_date / 1000)
+                                                    : updateProduct.arrival_date && id
                                                     ? new Date(updateProduct.arrival_date * 1000)
                                                     : new Date()
                                             }
@@ -108,7 +112,7 @@ const PricesInventory = (props: Props) => {
                                     types={<FontAwesomeIcon icon={faBoxOpen} className="icon-box" />}
                                     title={
                                         updateProduct?.arrival_date
-                                            ? moment(new Date(updateProduct?.arrival_date * 1000)).format('YYYY-MM-DD')
+                                            ? moment(new Date(updateProduct?.arrival_date / 1000)).format('YYYY-MM-DD')
                                             : moment(new Date()).format('YYYY-MM-DD')
                                     }
                                     onChange={(e) => console.log(e)}

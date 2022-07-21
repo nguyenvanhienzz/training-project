@@ -24,21 +24,22 @@ const PublicUser = () => {
     });
     useEffect(() => {
         const updateUser = async () => {
-            const valueUpdate = await userApi.Updateuser({ id });
+            const valueUpdate = await userApi.detailUser({ id });
             setDataUpdate(valueUpdate.data);
             let keys: any = Object.keys(value);
             let valueDefault: any = {};
             keys.forEach((item: any) => {
-                if (valueUpdate.data.info.hasOwnProperty(item)) {
+                if (valueUpdate.data.info?.hasOwnProperty(item)) {
                     valueDefault[item] = valueUpdate.data.info[item];
                 }
             });
             if (valueDefault) {
-                setvalues({ ...valueDefault });
+                setvalues({ ...valueDefault, ['role']: [...valueUpdate.data.info?.roles] });
             }
         };
         updateUser();
     }, [id]);
+
     return (
         <div className="public-user">
             <div className="title-close">

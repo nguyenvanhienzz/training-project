@@ -12,11 +12,14 @@ const userApi = {
         const url = 'apiAdmin/users/create';
         return config.AxiosClient.post(url, values);
     },
-    Updateuser(values: { id: string }): any {
+    detailUser(values: { id: string }): any {
         const url = 'apiVendor/profile/detail';
         return config.AxiosClient.post(url, values);
     },
-
+    Updateuser(values: { params: any[] }): any {
+        const url = 'apiAdmin/users/edit';
+        return config.AxiosClient.post(url, values);
+    },
     Getuser(values: any): any {
         const url = 'apiAdmin/users/list';
         return config.AxiosClient.post(url, values);
